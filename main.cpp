@@ -30,8 +30,9 @@ int* getIndexesEqualElements(int A[2][10]) {
                     l = 0;
                 }
                 for (;l < 10;l++) {
+                    int res[4] = {i, j, k, l};
                     if (A[i][j] == A[k][l]) {
-                        return {i, j, k, l};
+                        return res;
                     }
                 }
             }
